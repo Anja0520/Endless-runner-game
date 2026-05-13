@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bv5hdfsqkd3xm"]
+
+[ext_resource type="Script" uid="uid://f1vn5fe5d2nu" path="res://scenes/player/player.gd" id="1_5pofk"]
+[ext_resource type="Texture2D" uid="uid://cb0gl5pqq14hl" path="res://scenes/player/Pferd 2(2).PNG" id="2_5pofk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pofk"]
+radius = 35.999996
+height = 91.99999
+
+[node name="Player" type="CharacterBody2D" unique_id=1904066747]
+script = ExtResource("1_5pofk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=715300313]
+position = Vector2(1.0000076, -73.00001)
+scale = Vector2(0.060334872, 0.058599617)
+texture = ExtResource("2_5pofk")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1489305477]
+position = Vector2(-0.9999995, -58.000004)
+scale = Vector2(1.4317071, 1)
+shape = SubResource("CapsuleShape2D_5pofk")
+metadata/_edit_lock_ = true

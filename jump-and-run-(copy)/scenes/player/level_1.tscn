@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b5018541bx18y"]
+
+[ext_resource type="Texture2D" uid="uid://fpida71iws4i" path="res://scenes/player/ToxicFrogBlueBlue_Idle.png" id="1_ywgj1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_45bqb"]
+radius = 8.0
+height = 16.0
+
+[node name="Player" type="CharacterBody2D" unique_id=890641387]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1148485722]
+position = Vector2(0, -9)
+texture = ExtResource("1_ywgj1")
+hframes = 11
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070517394]
+position = Vector2(5, -8)
+shape = SubResource("CapsuleShape2D_45bqb")

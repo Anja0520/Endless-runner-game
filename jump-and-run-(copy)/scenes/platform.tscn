@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bm47s8mu7vvlp"]
+
+[ext_resource type="Texture2D" uid="uid://1n0gq1mwd2ap" path="res://scenes/Platform/platforms.png" id="1_ba0x2"]
+[ext_resource type="Texture2D" uid="uid://cc7csw1a8orpx" path="res://assets/fruit.png" id="2_nlgqw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nsrm0"]
+size = Vector2(2507, 140)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_507ja"]
+
+[node name="platform" type="StaticBody2D" unique_id=1827378914]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=68151338]
+position = Vector2(959.615, 172.57387)
+scale = Vector2(89.59893, 20.978891)
+texture = ExtResource("1_ba0x2")
+region_enabled = true
+region_rect = Rect2(18, 1, 28, 7)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=981681047]
+position = Vector2(961.5, 171)
+shape = SubResource("RectangleShape2D_nsrm0")
+metadata/_edit_lock_ = true
+
+[node name="stein" type="CharacterBody2D" parent="." unique_id=423843546]
+position = Vector2(959.615, 172.57387)
+scale = Vector2(89.59893, 20.978891)
+
+[node name="Sprite2D" type="Sprite2D" parent="stein" unique_id=282164819]
+texture = ExtResource("2_nlgqw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stein" unique_id=829976647]
+scale = Vector2(0.99999994, 0.9999999)
+shape = SubResource("CircleShape2D_507ja")
