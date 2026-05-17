@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cmdahp10kljkv"]
+
+[ext_resource type="Texture2D" uid="uid://nn4ix1bco43q" path="res://Assets/T-Rex_Tyrannosaurus_Animation_Video_Game_Sprite_Right_Side.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://dkkcajhpc3epy" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(270, 388)
+
+[node name="player" type="CharacterBody2D" unique_id=995160173]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=915510544]
+position = Vector2(-105, -165)
+scale = Vector2(0.28776035, 0.2872686)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=448847406]
+position = Vector2(-132, -200)
+shape = SubResource("RectangleShape2D_onrkg")
+debug_color = Color(0, 0.6, 0.69803923, 0)
