@@ -10,10 +10,17 @@ config_version=5
 
 [application]
 
-config/name="endless-runner"
-run/main_scene="uid://cp2sy607531cw"
+config/name="Jump and Run"
+run/main_scene="uid://cic6so4nfraxb"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=560
+window/size/viewport_height=320
+window/size/window_width_override=1120
+window/size/window_height_override=640
 
 [physics]
 
@@ -21,6 +28,7 @@ config/icon="res://icon.svg"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
