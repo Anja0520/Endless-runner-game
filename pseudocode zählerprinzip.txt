@@ -1,0 +1,10 @@
+Pseudocode: Zählerprinzip
+
+Bestwert X
+wenn spiel wird gestartet
+  Start Stopuhr;
+Wenn Pferd berührt stein oder spiel wird beendet
+ stopp stopuhr;
+ zeige stopuhr auf bildschrim an
+  wenn Bestwert X<Stopuhr
+   stopuhr = Bestwert
